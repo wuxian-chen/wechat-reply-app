@@ -1,0 +1,24 @@
+# 微信智能回复APP - 依赖文件
+# 运行前请确保安装以下依赖
+
+# 核心框架
+kivy>=2.1.0
+kivymd>=1.0.0
+
+# Android支持
+android
+pyjnius
+
+# 网络请求
+urllib3
+certifi
+
+# 打包工具
+buildozer
+
+# 可选：用于更高级的HTTP请求
+requests>=2.25.0
+
+# 测试依赖
+pytest>=7.0.0
+pytest-cov>=3.0.0

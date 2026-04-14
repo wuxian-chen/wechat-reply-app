@@ -1,0 +1,31 @@
+{
+    "qwen": {
+        "api_key": "sk-7dcefd079c424374aec6336651f4c41d",
+        "model": "qwen-turbo",
+        "available_models": {
+            "qwen-turbo": "快速响应，适合日常对话",
+            "qwen-plus": "平衡性能与速度",
+            "qwen-max": "最强能力，适合复杂任务"
+        }
+    },
+    "monitor": {
+        "contact_name": "女友",
+        "check_interval": 3,
+        "enabled": true
+    },
+    "reply": {
+        "min_suggestions": 3,
+        "max_suggestions": 5,
+        "include_reason": true,
+        "max_history_length": 100
+    },
+    "paths": {
+        "chat_history": "./chat_history",
+        "log_file": "./wechat_reply.log"
+    },
+    "server": {
+        "host": "0.0.0.0",
+        "port": 5000,
+        "debug": false
+    }
+}
