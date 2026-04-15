@@ -18,10 +18,12 @@ jobs:
         distribution: temurin
         java-version: '17'
     - run: pip install buildozer cython setuptools
-    - run: buildozer android debug
-      continue-on-error: true
+    - run: buildozer init || true
+    - run: buildozer android debug || buildozer android debug
+    - run: find . -name "*.apk" -type f
     - uses: actions/upload-artifact@v4
       if: always()
       with:
         name: wechat-reply-apk
-        path: bin/*.apk
+        path: '**/*.apk'
+        if-no-files-found: error
